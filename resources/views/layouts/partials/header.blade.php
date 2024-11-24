@@ -119,10 +119,14 @@
                          class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                          Settings
                      </a>
-                     <a href="#" role="menuitem"
-                         class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                         Logout
-                     </a>
+                     <form method="POST" action="{{ route('logout') }}" role="menuitem" class="block">
+                         @csrf
+                         <button type="submit"
+                             class="block w-full text-left px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
+                             Logout
+                         </button>
+                     </form>
+
                  </div>
              </div>
          </nav>
@@ -222,10 +226,14 @@
                          class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                          Settings
                      </a>
-                     <a href="#" role="menuitem"
-                         class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                         Logout
-                     </a>
+                     <form method="POST" action="{{ route('logout') }}" role="menuitem" class="block">
+                         @csrf
+                         <button type="submit"
+                             class="px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
+                             Logout
+                         </button>
+                     </form>
+
                  </div>
              </div>
          </nav>
